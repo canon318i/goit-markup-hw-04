@@ -81,6 +81,21 @@ ul {
   padding-right: 15px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-header {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--primary-header-color);
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -236,11 +251,6 @@ ul {
 
 /* Особенности */
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .skills-list {
   display: flex;
 }
@@ -283,17 +293,6 @@ ul {
 }
 
 /* Чем мы занимаемся */
-
-.mission-header,
-.team-header {
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  color: var(--primary-header-color);
-}
 
 .mission-section {
   padding-top: 0px;
@@ -390,6 +389,32 @@ ul {
   background-color: var(--accent-color);
   fill: var(--main-bkg-color);
 }
+/* Клиенты */
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+  flex-basis: calc((100% - 3 * var(--flex-margin)) / 4);
+}
+
+.clients-item:not(:last-child) {
+  margin-right: var(--flex-margin);
+}
+
+.clients-item-icon {
+  height: 92px;
+  padding: 25px calc((100% - 106px) / 2);
+  display: block;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--svg-color);
+}
+
+.clients-item-icon:hover,
+.clients-item-icon:focus {
+  fill: var(--accent-color);
+}
 
 /* Подвал */
 .footer {
@@ -461,6 +486,8 @@ ul {
 .filter-button:focus {
   color: var(--secondary-header-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .examples-list {
@@ -473,6 +500,11 @@ ul {
 .examples-item {
   margin-top: var(--flex-margin);
   margin-left: var(--flex-margin);
+}
+
+.examples-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .examples-info {
