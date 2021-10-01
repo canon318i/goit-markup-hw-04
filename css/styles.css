@@ -404,15 +404,16 @@ ul {
 
 .clients-item-icon {
   height: 92px;
-  padding: 25px calc((100% - 106px) / 2);
+  padding: 16px calc((100% - 106px) / 2);
   display: block;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--svg-color);
   border-radius: 4px;
   fill: var(--svg-color);
 }
 
 .clients-item-icon:hover,
 .clients-item-icon:focus {
+  border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
 
@@ -421,6 +422,14 @@ ul {
   background-color: var(--hero-footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-contacts {
+  margin-right: 70px;
 }
 
 .footer-logo {
@@ -454,6 +463,47 @@ ul {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+}
+
+.footer-join-us {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: block;
+  color: var(--secondary-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+}
+
+.footer-list-social {
+  display: flex;
+  justify-content: center;
+}
+
+/* .team-item-social {
+  margin-right: 5px;
+  margin-left: 5px;
+} */
+
+.footer-item-social + .footer-item-social {
+  margin-left: 10px;
+}
+
+.footer-link-social {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--main-bkg-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link-social:hover,
+.footer-link-social:focus {
+  background-color: var(--accent-color);
 }
 
 /* Портфолио */
