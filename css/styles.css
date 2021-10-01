@@ -7,6 +7,7 @@
   --alt-bkg-color: #f5f4fa;
   --hero-footer-color: #2f303a;
   --accent-color: #2196f3;
+  --hero-accent-color: #188ce8;
   --logo-black: #000000;
   --logo-white: #ffffff;
   --logo-strike: #ececec;
@@ -205,6 +206,11 @@ ul {
   color: var(--secondary-header-color);
   background-color: var(--accent-color);
   cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--hero-accent-color);
 }
 
 /* Особенности */
