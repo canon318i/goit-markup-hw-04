@@ -53,7 +53,8 @@ img {
   height: auto;
 }
 
-.link {
+.link,
+a {
   text-decoration: none;
   font-style: inherit;
 }
@@ -155,7 +156,10 @@ ul {
 }
 
 .header-nav-link:hover,
-.header-nav-link:focus,
+.header-nav-link:focus {
+  color: var(--accent-color);
+}
+
 .current {
   color: var(--accent-color);
 }
@@ -265,8 +269,10 @@ ul {
 
 .skills-item-icon {
   height: 120px;
-  padding: 25px calc((100% - 70px) / 2);
-  display: block;
+  /* padding: 25px calc((100% - 70px) / 2); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--alt-bkg-color);
   border-radius: 4px;
 }
@@ -335,7 +341,7 @@ ul {
 }
 
 .team-item-info {
-  padding: 30px;
+  padding: 30px 0;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -404,8 +410,10 @@ ul {
 
 .clients-item-icon {
   height: 92px;
-  padding: 16px calc((100% - 106px) / 2);
-  display: block;
+  /* padding: 16px calc((100% - 106px) / 2); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--svg-color);
   border-radius: 4px;
   fill: var(--svg-color);
@@ -426,6 +434,7 @@ ul {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-contacts {
@@ -466,7 +475,6 @@ ul {
 }
 
 .footer-join-us {
-  margin-top: 15px;
   margin-bottom: 20px;
   display: block;
   color: var(--secondary-text-color);
@@ -552,7 +560,11 @@ ul {
   margin-left: var(--flex-margin);
 }
 
-.examples-item:hover {
+.examples-link {
+  display: block;
+}
+
+.examples-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
